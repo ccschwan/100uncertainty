@@ -4,6 +4,7 @@ Was ist Uncertainty
 ---
 title: "Die Riemannsche Vermutung"
 date: 2026-03-24
+Math:true
 
 ---
 Heute schauen wir uns das Integral an:
