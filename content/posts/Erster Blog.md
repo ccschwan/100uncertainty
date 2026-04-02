@@ -1,10 +1,6 @@
-Das ist der erste Blog-Eintrag
+02-04-2026
+# What is Uncertainty?
 
-Was ist Uncertainty
----
-title: "Die Riemannsche Vermutung"
-date: 2026-03-24
-Math:true
 
 ---
 Heute schauen wir uns das Integral an:
