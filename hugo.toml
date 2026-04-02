@@ -1,4 +1,4 @@
 baseURL = 'https://ccschwan.github.io/100uncertainty/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Uncertainty, Explainability & Fairness'
 theme = "PaperMod"
