@@ -1,4 +1,9 @@
-baseURL = 'https://ccschwan.github.io/100uncertainty/'
-locale = 'en-us'
-title = 'Uncertainty, Explainability & Fairness'
+baseURL = "https://ccschwan.github.io/100uncertainty/"
+languageCode = "en-us"
+title = "Uncertainty, Explainability & Fairness"
 theme = "PaperMod"
+defaultContentLanguage = "en"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
