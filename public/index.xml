@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Uncertainty, Explainability &amp; Fairness</title>
-    <link>https://ccschwan.github.io/100uncertainty/</link>
+    <link>http://localhost:1313/100uncertainty/</link>
     <description>Recent content on Uncertainty, Explainability &amp; Fairness</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ccschwan.github.io/100uncertainty/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/100uncertainty/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mein zweiter Blogtitel</title>
-      <link>https://ccschwan.github.io/100uncertainty/posts/zweiter-blog/</link>
+      <link>http://localhost:1313/100uncertainty/posts/zweiter-blog/</link>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://ccschwan.github.io/100uncertainty/posts/zweiter-blog/</guid>
+      <guid>http://localhost:1313/100uncertainty/posts/zweiter-blog/</guid>
       <description>Kurzbeschreibung für die Startseite</description>
     </item>
     <item>
       <title>What is Uncertainty?</title>
-      <link>https://ccschwan.github.io/100uncertainty/posts/erster-blog/</link>
+      <link>http://localhost:1313/100uncertainty/posts/erster-blog/</link>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://ccschwan.github.io/100uncertainty/posts/erster-blog/</guid>
+      <guid>http://localhost:1313/100uncertainty/posts/erster-blog/</guid>
       <description>A short overview of uncertainty and why it matters in mathematical and scientific thinking.</description>
     </item>
   </channel>
