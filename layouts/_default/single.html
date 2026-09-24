@@ -14,9 +14,10 @@
     <div class="sidebar-header">Contents</div>
     <nav class="chapter-nav" aria-label="Book chapters">
       {{- range $chapters }}
+      {{- $label := .Title | replaceRE "^\\d+\\.\\s*" "" -}}
       <a class="chapter-link{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}" href="{{ .Permalink }}">
         <span class="chapter-index">{{ .Weight }}</span>
-        <span class="chapter-label">{{ .Title }}</span>
+        <span class="chapter-label">{{ $label }}</span>
       </a>
       {{- end }}
     </nav>

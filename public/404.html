@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="auto">
+<html lang="en" dir="auto" data-theme="light">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>404 Page not found | Uncertainty, Explainability &amp; Fairness</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -80,16 +80,33 @@
     --book-bg: #f6f3ee;
     --book-paper: #fffdf9;
     --book-ink: #1d2a36;
-    --book-muted: #586877;
-    --book-line: #e5ddd2;
-    --book-accent: #234e7a;
-    --book-accent-soft: #eaf1f8;
+    --book-muted: #456586;
+    --book-line: #dfeaf3;
+    --book-accent: #1e5fa8;
+    --book-accent-soft: #eaf3ff;
     --book-shadow: 0 18px 30px rgba(20, 30, 38, 0.07);
+    color-scheme: light;
+  }
+
+  html,
+  body,
+  .list,
+  .main {
+    background: var(--book-bg) !important;
+    color: var(--book-ink) !important;
   }
 
   body {
     background: var(--book-bg);
     color: var(--book-ink);
+    font-size: 16px;
+  }
+
+  .main {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .book-landing {
@@ -304,11 +321,14 @@
 
   .book-shell {
     display: grid;
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 220px minmax(0, 1fr);
     gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0;
     padding: 2.5rem 1.2rem 4rem;
+    align-items: start;
+    text-align: left;
   }
 
   .book-sidebar {
@@ -321,6 +341,7 @@
     padding: 1.1rem 0.9rem;
     box-shadow: 0 12px 18px rgba(17, 26, 35, 0.04);
     width: 100%;
+    text-align: left;
   }
 
   .sidebar-header {
@@ -379,6 +400,8 @@
     border-radius: 22px;
     padding: 2.5rem 2.5rem;
     box-shadow: var(--book-shadow);
+    width: 100%;
+    max-width: none;
   }
 
   .book-header h1 {
@@ -407,8 +430,8 @@
   .book-content {
     margin-top: 1.75rem;
     color: var(--book-ink);
-    font-size: 1.04rem;
-    line-height: 1.9;
+    font-size: 1rem;
+    line-height: 1.8;
   }
 
   .book-content h2,
@@ -417,6 +440,7 @@
     margin-bottom: 0.9rem;
     line-height: 1.25;
     letter-spacing: -0.03em;
+    color: var(--book-accent);
   }
 
   .book-content p,
@@ -506,11 +530,19 @@
   }
 </style>
 
+<meta property="og:url" content="http://localhost:1313/404.html">
+  <meta property="og:site_name" content="Uncertainty, Explainability & Fairness">
+  <meta property="og:title" content="404 Page not found">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="404 Page not found">
 
 </head>
 <body class="list" id="top">
     <header class="simple-header">
-  <a class="site-brand" href="http://localhost:1313/">Uncertainty, Explainability &amp; Fairness</a>
+  <a class="site-brand" href="/" aria-label="Go to home page">Uncertainty, Explainability &amp; Fairness</a>
 </header>
 <main class="main">
 <div class="not-found">404</div>
