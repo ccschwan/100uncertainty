@@ -19,6 +19,9 @@
         <span class="chapter-index">{{ .Weight }}</span>
         <span class="chapter-label">{{ $label }}</span>
       </a>
+      {{- if eq .Weight 1 }}
+      <a class="chapter-sub-link" href="{{ .RelPermalink }}#uncertainty-in-machine-learning">Uncertainty in machine learning</a>
+      {{- end }}
       {{- end }}
     </nav>
   </aside>

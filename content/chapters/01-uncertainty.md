@@ -24,3 +24,9 @@ We often distinguish between different kinds of uncertainty:
 A common distinction is between aleatoric uncertainty, which arises from inherent randomness in the data, and epistemic uncertainty, which reflects what the model does not know because the information is limited or missing.
 
 This makes uncertainty a foundational concept across statistics, machine learning, and scientific inquiry.
+
+## Uncertainty in machine learning
+
+In machine learning, uncertainty describes how confident a model can be in its predictions. A useful distinction is between aleatoric uncertainty, which comes from randomness or noise in the data, and epistemic uncertainty, which reflects limited knowledge or insufficient data. These concepts help explain why a model may be uncertain and when its predictions should be treated with caution.
+
+For a broader introduction to these ideas, see [Aleatoric and epistemic uncertainty in machine learning: An introduction to concepts and methods](https://arxiv.org/abs/1910.09457) by Eyke Hüllermeier and Willem Waegeman.
