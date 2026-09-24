@@ -2,20 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/100uncertainty/posts/zweiter-blog/</loc>
-    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/chapters/01-uncertainty/</loc>
   </url><url>
-    <loc>http://localhost:1313/100uncertainty/posts/</loc>
-    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/chapters/02-explainability/</loc>
   </url><url>
-    <loc>http://localhost:1313/100uncertainty/</loc>
-    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/chapters/03-fairness/</loc>
   </url><url>
-    <loc>http://localhost:1313/100uncertainty/posts/erster-blog/</loc>
-    <lastmod>2026-04-02T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/chapters/</loc>
   </url><url>
-    <loc>http://localhost:1313/100uncertainty/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/100uncertainty/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
   </url>
 </urlset>

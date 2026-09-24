@@ -1,0 +1,75 @@
+{{- define "main" }}
+{{- if eq .Type "chapters" }}
+{{- $chapters := (where site.RegularPages "Type" "chapters").ByWeight -}}
+{{- $prev := "" -}}
+{{- $next := "" -}}
+{{- range $idx, $page := $chapters }}
+  {{- if eq $page.RelPermalink $.RelPermalink }}
+    {{- if gt $idx 0 }}{{- $prev = index $chapters (sub $idx 1) }}{{- end }}
+    {{- if lt $idx (sub (len $chapters) 1) }}{{- $next = index $chapters (add $idx 1) }}{{- end }}
+  {{- end }}
+{{- end }}
+<div class="book-shell">
+  <aside class="book-sidebar">
+    <div class="sidebar-header">Contents</div>
+    <nav class="chapter-nav" aria-label="Book chapters">
+      {{- range $chapters }}
+      <a class="chapter-link{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}" href="{{ .Permalink }}">
+        <span class="chapter-index">{{ .Weight }}</span>
+        <span class="chapter-label">{{ .Title }}</span>
+      </a>
+      {{- end }}
+    </nav>
+  </aside>
+
+  <article class="book-article">
+    <header class="book-header">
+      <p class="chapter-kicker">Chapter {{ .Weight }}</p>
+      <h1>{{ .Title }}</h1>
+      {{- with .Description }}
+      <div class="chapter-description">{{ . }}</div>
+      {{- end }}
+    </header>
+
+    {{- if .Content }}
+    <div class="book-content">
+      {{ .Content }}
+    </div>
+    {{- end }}
+
+    <footer class="book-footer">
+      <div class="chapter-nav-links">
+        {{- with $prev }}
+        <a class="nav-link prev" href="{{ .Permalink }}">← Previous chapter</a>
+        {{- end }}
+        {{- with $next }}
+        <a class="nav-link next" href="{{ .Permalink }}">Next chapter →</a>
+        {{- end }}
+      </div>
+    </footer>
+  </article>
+</div>
+{{- else }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+</article>
+{{- end }}
+{{- end }}
