@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Uncertainty, Explainability &amp; Fairness</title>
-    <link>http://localhost:39783/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Uncertainty, Explainability &amp; Fairness</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://localhost:39783/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Uncertainty</title>
-      <link>http://localhost:39783/chapters/01-uncertainty/</link>
+      <link>http://localhost:1313/chapters/01-uncertainty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39783/chapters/01-uncertainty/</guid>
+      <guid>http://localhost:1313/chapters/01-uncertainty/</guid>
       <description>An introduction to uncertainty and why it matters.</description>
     </item>
     <item>
       <title>Explainability</title>
-      <link>http://localhost:39783/chapters/02-explainability/</link>
+      <link>http://localhost:1313/chapters/02-explainability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39783/chapters/02-explainability/</guid>
+      <guid>http://localhost:1313/chapters/02-explainability/</guid>
       <description>Why interpretable methods matter and how they support understanding and trust.</description>
     </item>
     <item>
       <title>Fairness</title>
-      <link>http://localhost:39783/chapters/03-fairness/</link>
+      <link>http://localhost:1313/chapters/03-fairness/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:39783/chapters/03-fairness/</guid>
+      <guid>http://localhost:1313/chapters/03-fairness/</guid>
       <description>Fairness as a design goal and a challenge in machine learning systems.</description>
     </item>
   </channel>
