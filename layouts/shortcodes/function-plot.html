@@ -1,0 +1,12 @@
+{{- $function := .Get "function" -}}
+{{- $id := printf "function-plot-%d" .Ordinal -}}
+<figure class="function-plot" data-function="{{ $function }}" data-x-min="{{ .Get "xMin" | default "-5" }}" data-x-max="{{ .Get "xMax" | default "5" }}">
+  <canvas id="{{ $id }}" role="img" aria-label="Interactive plot of {{ $function }}"></canvas>
+  {{- with .Get "parameter" }}
+  <div class="function-plot-control">
+    <label for="{{ $id }}-control">{{ $.Get "label" }}</label>
+    <input id="{{ $id }}-control" type="range" data-parameter="{{ . }}" min="{{ $.Get "min" }}" max="{{ $.Get "max" }}" step="{{ $.Get "step" }}" value="{{ $.Get "value" }}">
+    <output for="{{ $id }}-control">{{ $.Get "value" }}</output>
+  </div>
+  {{- end }}
+</figure>

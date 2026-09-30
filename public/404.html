@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="light">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39783&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:39783/404.html">
+<link rel="canonical" href="http://localhost:1313/404.html">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:39783/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:39783/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:39783/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:39783/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:39783/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:39783/404.html">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/404.html">
 <noscript>
     <style>
         #theme-toggle,
@@ -74,6 +74,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" 
         onload="renderMathInElement(document.body);"></script>
+<script defer src="/js/function-plots.js"></script>
 
 <style>
   :root {
@@ -410,6 +411,11 @@
     text-decoration: underline;
   }
 
+  .chapter-sub-link.active {
+    color: var(--book-accent);
+    font-weight: 700;
+  }
+
   .book-article {
     background: rgba(255,255,255,0.55);
     border: 1px solid var(--book-line);
@@ -478,6 +484,53 @@
 
   .book-content a:hover {
     color: var(--book-accent);
+  }
+
+  .function-plot {
+    margin: 1.5rem 0 2rem;
+    padding: 1rem;
+    background: var(--book-paper);
+    border: 1px solid var(--book-line);
+    border-radius: 12px;
+  }
+
+  .function-plot canvas {
+    display: block;
+    width: 100%;
+    height: 270px;
+  }
+
+  .function-plot-control {
+    display: grid;
+    grid-template-columns: minmax(9rem, auto) minmax(8rem, 1fr) 3rem;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 0.8rem;
+    color: var(--book-ink);
+    font-size: 0.9rem;
+  }
+
+  .function-plot-control input {
+    width: 100%;
+    accent-color: var(--book-accent);
+  }
+
+  .function-plot-control output {
+    color: var(--book-accent);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  @media (max-width: 520px) {
+    .function-plot-control {
+      grid-template-columns: 1fr auto;
+      gap: 0.35rem 0.7rem;
+    }
+
+    .function-plot-control input {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
   }
 
   .book-footer {

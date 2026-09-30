@@ -1,6 +1,8 @@
 {{- define "main" }}
 {{- if eq .Type "chapters" }}
-{{- $chapters := (where site.RegularPages "Type" "chapters").ByWeight -}}
+{{- $chapters := where site.RegularPages "Type" "chapters" -}}
+{{- $chapters = where $chapters "Params.subpage" "!=" true -}}
+{{- $chapters = $chapters.ByWeight -}}
 {{- $prev := "" -}}
 {{- $next := "" -}}
 {{- range $idx, $page := $chapters }}
@@ -22,13 +24,16 @@
       {{- if eq .Weight 1 }}
       <a class="chapter-sub-link" href="{{ .RelPermalink }}#uncertainty-in-machine-learning">Uncertainty in machine learning</a>
       {{- end }}
+      {{- if eq .Weight 4 }}
+      <a class="chapter-sub-link{{ if $.Params.subpage }} active{{ end }}" href="{{ "/chapters/04-mathematical-basics/common-activation-and-loss-functions/" | relURL }}">Common activation and loss functions</a>
+      {{- end }}
       {{- end }}
     </nav>
   </aside>
 
   <article class="book-article">
     <header class="book-header">
-      <p class="chapter-kicker">Chapter {{ .Weight }}</p>
+      <p class="chapter-kicker">{{ if .Params.subpage }}Mathematical Basics{{ else }}Chapter {{ .Weight }}{{ end }}</p>
       <h1>{{ .Title }}</h1>
       {{- with .Description }}
       <div class="chapter-description">{{ . }}</div>
