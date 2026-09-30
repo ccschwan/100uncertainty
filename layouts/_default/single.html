@@ -25,7 +25,9 @@
       <a class="chapter-sub-link" href="{{ .RelPermalink }}#uncertainty-in-machine-learning">Uncertainty in machine learning</a>
       {{- end }}
       {{- if eq .Weight 4 }}
-      <a class="chapter-sub-link{{ if $.Params.subpage }} active{{ end }}" href="{{ "/chapters/04-mathematical-basics/common-activation-and-loss-functions/" | relURL }}">Common activation and loss functions</a>
+      {{- with site.GetPage "/chapters/05-common-activation-and-loss-functions.md" }}
+      <a class="chapter-sub-link{{ if $.Params.subpage }} active{{ end }}" href="{{ .RelPermalink }}">Common activation and loss functions</a>
+      {{- end }}
       {{- end }}
       {{- end }}
     </nav>
