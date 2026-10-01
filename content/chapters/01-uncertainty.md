@@ -13,7 +13,7 @@ Uncertainty is a property of the world, the data therein, and the decision proce
 
 ## Types of uncertainty
 
-Right from the beginning, there is no clear formal and consistent framework for describing uncertainty. Typically, it is divided into two types: aleatoric and epistemic.  "Aleatoric" comes from the Latin *alea* (dice), while "epistemic" stems from the Greek *episteme* (knowledge). Why on earth would anyone mix naming conventions from two completely different languages? 
+Right from the beginning, there is no clear formal and consistent framework for describing uncertainty. Typically, it is divided into two types: aleatoric and epistemic.  "Aleatoric" comes from the Latin *alea* (dice), while "epistemic" stems from the Greek *episteme* (knowledge).
 
 The typcial example for the aleatoric uncertainty is, like the name suggests, throwing a dice. No matter how hard we try there is no way in predicting the outcome. It is the inherent nature of the data - the next number on the dice - to be probabilistic. This kind of uncertainty is said to be irreducible. Epistemic uncertainty comes from the lack of knowledge. One cannot determine if a model is correct when there is no or not enough data to validate the model.
 
